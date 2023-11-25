@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,6 +21,7 @@ import code.api_compas.model.Tag;
 import code.api_compas.repository.EventRepository;
 
 @RestController
+@CrossOrigin("http:localhost:3000")
 @RequestMapping("/events")
 public class EventController {
     @Autowired
@@ -29,7 +31,6 @@ public class EventController {
     public List<Event> getAllEvents() {
         return this.repository.findAll();
     }
-
 
     @PostMapping
     public Event createEevent(@RequestBody Event event) {

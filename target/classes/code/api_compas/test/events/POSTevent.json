@@ -1,0 +1,37 @@
+{
+    "title": "Event Title",
+    "description": "Event Description",
+    "created_at": "2022-01-01T00:00:00Z",
+    "last_modified_date": "2022-01-01T00:00:00Z",
+    "date_event": "2022-02-01T00:00:00Z",
+    "start_time": "09:00",
+    "end_time": "17:00",
+    "tags": [
+       {
+         "name": "Tag Name 1"
+       },
+       {
+         "name": "Tag Name 2"
+       }
+    ],
+    "location": "Event Location",
+    "interested_attendes": [
+       {
+         "name": "User Name 1"
+       },
+       {
+         "name": "User Name 2"
+       }
+    ],
+    "confirmed_attendes": [
+       {
+         "name": "User Name 3"
+       },
+       {
+         "name": "User Name 4"
+       }
+    ],
+    "created_by": {
+       "name": "User Name 5"
+    }
+   }
