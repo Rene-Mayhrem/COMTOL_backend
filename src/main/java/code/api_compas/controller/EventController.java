@@ -21,7 +21,7 @@ import code.api_compas.model.Tag;
 import code.api_compas.repository.EventRepository;
 
 @RestController
-@CrossOrigin("http:localhost:3000")
+@CrossOrigin("http://localhost:3000")
 @RequestMapping("/events")
 public class EventController {
     @Autowired
